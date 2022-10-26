@@ -1,0 +1,400 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    box-sizing: border-box;
+    width: 100%; 
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 16px;
+    min-height:  80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: #213b7e;
+    position: relative;
+
+}
+.site-logo {
+    width: auto;
+}
+.site-menu {
+    align-self: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+.site-menu > li {
+    display: flex;
+    min-height:  80px;
+
+}
+.menu-link {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    padding: 0 18px;
+    background-color: #213b7e;
+    
+
+}
+.menu-link:hover {
+    color: #213b7e;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 153px;
+    min-height: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    background-color: #EA5D21;
+    text-decoration: none;
+}
+/* login popup */
+.login-popup {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 500px;
+    min-height: 418px;
+    padding: 26px 28px 56px;
+    background-color: #fff;
+    border: 1px solid #213b7e;
+    box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.login-form {
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+
+.login-form > input {
+    width: 100%;
+    max-width: 444px;
+    min-height: 55px;
+    margin-bottom: 56px;
+    border: 1px solid #808080;
+}
+
+ .popup-button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 153px;
+    min-height: 50px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #EA5D21;
+    border: none;
+ }
+ .login-form > input {
+    padding: 0 1em;
+ }
+
+
+
+/* main */
+.main {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 911px;
+    margin:0 auto;
+    flex-grow: 1;
+    padding: 0 2vw;
+    
+}
+.class-photo {
+    object-fit: cover;
+    width: 100%;
+    max-width: 523px;
+    height: 316px;
+}
+.main-heading {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.17;
+    
+}
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 21px;
+    text-align: center;
+}
+.intro-wrap{
+    display: flex;
+    gap: 127px;
+      
+}
+.intro-text{
+    width: 100%;
+    max-width: 634px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+.intro-text > strong {
+    font-weight: 700;
+}
+.intro-text > em {
+    color: #CF5510;
+    font-style: italic;
+}
+.aside-text {
+    color: rgba(100, 100, 100, 1);
+    font-family: lobster;
+    font-style: normal;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 45px;
+    position: relative;
+    left: -30px;
+}
+
+
+/* students */
+.main-students {
+    max-width: 1202px;
+}
+.students {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1202 px;
+    gap: 50px;
+    margin: 0 auto;
+}
+
+.student {
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+flex: 1 1 0;
+/* outline: 1px solid black; */
+ padding: 1em; 
+box-sizing: border-box;
+width: 200px;
+background-color: #a0cbdb66;
+}  
+
+@media (min-width: 1150px) {
+    .student {
+        max-width: calc(100% / 2);
+    }    
+}
+ .student > img { 
+   /* height: 270px; */
+    object-position: bottom; 
+     object-fit: contain; 
+   
+}
+.student-name {
+    display: block;
+    text-align: center;
+     margin: 0; 
+    margin-bottom: 1em; 
+}
+.new-student {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 0;
+    right: -13px;
+    display: flex;
+    padding: 2px 5px;
+    border-radius: 20px;
+    background-color: #3AA828;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+/* About me */
+.contacts-my {
+    margin: 0 auto;
+    max-width: 820px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+}
+
+  
+
+.contacts-addressmy {
+    margin: 0 auto;
+    max-width: 820px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+
+
+.telphonemy {
+    color: #000;
+}
+.myphoto {
+    float: left;
+    padding: 0 20px 20px 0;
+}
+/* About */
+.main-about {
+    max-width: 820px;
+}
+
+.about-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+}
+.about-video {
+    width: 100%;
+    min-height: 550px;
+    
+}
+
+
+
+/* Contacts */
+.contacts-about {
+    max-width: 100%;
+}
+
+.contacts-heading {
+    max-width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.contacts-our {
+    margin: 0 auto;
+    max-width: 820px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+}
+
+.contacts-address {
+    margin: 0 auto;
+    max-width: 820px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.telphone {
+    color: #000;
+    
+}
+
+.contacts-map {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 16px;
+    margin-bottom: 15px;
+
+}
+
+.yandex-map {
+    width: 100%;
+    border: 1px;
+}
+
+
+/* footer */
+.footer{
+    box-sizing: border-box; 
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 16px;
+    min-height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(33, 59, 126, 1);
+}
+.copywrite{
+    color: rgba(255, 255, 255, 0.5);
+}
+.innopolise-link{
+    color: rgba(255, 255, 255, 0.5);
+}
+/* Responsive */
+
+@media (max-width: 630px) {
+    .header {
+        justify-content: center;
+        padding: 1em 16px;
+        gap: 1em;
+    }
+    .site-logo {
+    width: 100%;
+    min-height: 80px;
+    }
+    .site-menu {
+        justify-content: center;
+    }
+}
+
+.active-link {
+    color: #213b7e;
+    background-color: #fff;
+    text-decoration: none;
+}
+.show-popup {
+    display: block;
+}
